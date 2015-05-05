@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DmozItem	dmoz_spider.py	/^from tutorial.items import DmozItem$/;"	i
+DmozSpider	dmoz_spider.py	/^class DmozSpider(scrapy.Spider):$/;"	c
+allowed_domains	dmoz_spider.py	/^    allowed_domains = ["dmoz.org"]$/;"	v	class:DmozSpider
+name	dmoz_spider.py	/^    name = "dmoz"$/;"	v	class:DmozSpider
+parse	dmoz_spider.py	/^    def parse(self, response):$/;"	m	class:DmozSpider
+scrapy	dmoz_spider.py	/^import scrapy$/;"	i
+start_urls	dmoz_spider.py	/^    start_urls = [$/;"	v	class:DmozSpider

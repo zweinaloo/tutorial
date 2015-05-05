@@ -1,0 +1,27 @@
+DmozItem	tutorial\items.py	/^class DmozItem(scrapy.Item):$/;"	c
+desc	tutorial\items.py	/^    desc = scrapy.Field()$/;"	v	class:DmozItem
+link	tutorial\items.py	/^    link = scrapy.Field()$/;"	v	class:DmozItem
+mytest	tutorial\items.py	/^    mytest = scrapy.Field()$/;"	v	class:DmozItem
+scrapy	tutorial\items.py	/^import scrapy$/;"	i
+title	tutorial\items.py	/^    title = scrapy.Field()$/;"	v	class:DmozItem
+TutorialPipeline	tutorial\pipelines.py	/^class TutorialPipeline(object):$/;"	c
+process_item	tutorial\pipelines.py	/^    def process_item(self, item, spider):$/;"	m	class:TutorialPipeline
+BOT_NAME	tutorial\settings.py	/^BOT_NAME = 'tutorial'$/;"	v
+NEWSPIDER_MODULE	tutorial\settings.py	/^NEWSPIDER_MODULE = 'tutorial.spiders'$/;"	v
+SPIDER_MODULES	tutorial\settings.py	/^SPIDER_MODULES = ['tutorial.spiders']$/;"	v
+DmozSpider	tutorial\spiders\dmoz_spider.py	/^class DmozSpider(scrapy.spider.Spider):$/;"	c
+allowed_domains	tutorial\spiders\dmoz_spider.py	/^    allowed_domains = ["dmoz.org"]$/;"	v	class:DmozSpider
+name	tutorial\spiders\dmoz_spider.py	/^    name = "dmoz"$/;"	v	class:DmozSpider
+parse	tutorial\spiders\dmoz_spider.py	/^    def parse(self, response):$/;"	m	class:DmozSpider
+scrapy	tutorial\spiders\dmoz_spider.py	/^import scrapy$/;"	i
+start_urls	tutorial\spiders\dmoz_spider.py	/^    start_urls = [$/;"	v	class:DmozSpider
+f	tutorial\spiders\test.py	/^f = open('source.txt','r')$/;"	v
+html	tutorial\spiders\test.py	/^html = f.read()$/;"	v
+re	tutorial\spiders\test.py	/^import re$/;"	i
+requests	tutorial\spiders\test.py	/^import requests$/;"	i
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
