@@ -13,5 +13,13 @@ BOT_NAME = 'tutorial'
 SPIDER_MODULES = ['tutorial.spiders']
 NEWSPIDER_MODULE = 'tutorial.spiders'
 
+
+
+# Crawl responsibly by identifying yourself (and your website) on the user-agent
+#USER_AGENT = 'moko (+http://www.yourdomain.com)'
+
+ITEM_PIPELINES={'tutorial.pipelines.MyImagesPipeline': 2} 
+
+IMAGES_STORE = 'E:\img'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'tutorial (+http://www.yourdomain.com)'

@@ -6,7 +6,7 @@ from tutorial.items import DmozItem
 
 class DmozSpider(scrapy.Spider):
     name = "dmoz"
-    allowed_domains = ["dmoz.org"]
+    allowed_domains = ["moedao.com"]
     start_urls = [
         # "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/",
         # "http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"
@@ -15,11 +15,10 @@ class DmozSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
-        # for sel in response.xpath('//ul/li'):
+         # for sel in response.xpath("//div[@class='hotbox']"):
             item = DmozItem()
             # item['title'] = sel.xpath('a/text()').extract()
             # item['link'] = sel.xpath('a/@href').extract()
             # item['desc'] = sel.xpath('text()').extract()
-
-            item['mytest'] = response.xpath("//div[@class='hotbox']/a/img/@src").extract()
+            item['image_urls'] = response.xpath("//div/a/img/@src").extract()
             yield item

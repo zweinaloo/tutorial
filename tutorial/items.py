@@ -15,10 +15,10 @@ class DmozItem(scrapy.Item):
     # define the fields for your item here like:
     # 定义
     # name = scrapy.Field()
-    title = scrapy.Field()
-    link = scrapy.Field()
-    desc = scrapy.Field()
-    mytest = scrapy.Field()
+    imgUrl = scrapy.Field()
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
+
 
 
 
