@@ -10,7 +10,7 @@ class DmozSpider(scrapy.Spider):
     start_urls = [
         # "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/",
         # "http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"
-        # "http://www.javlibrary.com/cn/vl_newentries.php"
+       
         "http://www.moedao.com/"
     ]
 
